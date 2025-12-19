@@ -1,0 +1,147 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+
+.all{
+    min-height: 500px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+  background: linear-gradient(300deg,darkviolet,#3e50f1,#ff33db,#006aff,#f500ff,#f500ff);
+  background-size: 360% 360%;
+  animation: gradient-animation 32s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+header{
+  margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+body h1{
+    color:#fff;
+    transition: text-shadow 0.5s;
+}
+
+body h1:hover {
+    text-shadow: 0 0 16px #fff;
+}
+
+.adddiv{
+  width: 500px;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+}
+
+.adddiv input{
+  background-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.adddiv input:focus{
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.adddiv input:hover{
+    box-shadow: 0 0 10px #fff;
+}
+
+.adddiv button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.adddiv button:hover{
+    box-shadow: 0 0 10px #fff;
+}
+
+.todolist{
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: grid;
+  row-gap: 15px;
+}
+
+.todolist .todo{
+  width: 475px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 18px;
+}
+
+.todolist .todo .delchek{
+  display: flex;
+  gap: 20px;
+
+}
+
+.todolist .todo .delchek a{
+    color: #fff;
+}
+
+.todolist .todo .delchek a:hover{
+  text-shadow: 0 0 10px red;
+}
+
+.active{
+  box-shadow: 0 0 20px 8px red;
+}
+
+.todolist .todo:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px #fff;
+}
